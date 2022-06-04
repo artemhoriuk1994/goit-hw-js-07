@@ -5,14 +5,14 @@ const imgRender = createElement(galleryItems);
 
 function createElement(galleryItems) {
   return galleryItems
-    .map(({ preview, original, descripttion }) => {
+    .map(({ preview, original, description }) => {
       return `<div class="gallery__item">
   <a class="gallery__link" href="large-image.jpg">
     <img
       class="gallery__image"
       src=${preview}
       data-source=${original}
-      alt=${descripttion}
+      alt=${description}
     />
   </a>
 </div>`;
